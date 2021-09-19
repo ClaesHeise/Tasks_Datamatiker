@@ -31,7 +31,7 @@ void MethodOne()
 */
 void MethodTwo() 
 {
-  int weekDay = 2; // 0 = Monday, 6 = Sunday.
+  int weekDay = 5; // 0 = Monday, 6 = Sunday.
   // The day of the week as a string to be printed later
   String nameDay = "";
   
