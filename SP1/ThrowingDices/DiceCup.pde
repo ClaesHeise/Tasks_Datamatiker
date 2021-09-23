@@ -43,6 +43,10 @@ class DiceCup {
     for (int i = 0; i < cup.length-(cup.length-amountDices); i++) {
       cup[i].roll();
     }
+    sort();
+  }
+
+  void sort() {
     /* A sorting mechanism that loops through the cup (array) and add/sorts each
      die into one of the 6 arrays in sortedDice[][] based on their value, uses
      the array of counters (counterDices) just like amountDices is used in addDie */
