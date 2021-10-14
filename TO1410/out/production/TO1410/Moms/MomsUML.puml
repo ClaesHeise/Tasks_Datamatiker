@@ -1,0 +1,36 @@
+@startuml
+class Main{
+    + Controller controller
+}
+
+class Controller{
+    - View view
+    - CalculateVat vat
+    - Dialog dialog
+    + void runController()
+}
+
+class View{
+    - String MSG
+    - String CURRENCY
+    + void doView(double moms)
+}
+
+class CalculateVat{
+    - int PRCVAT
+    + double getVat(double userMoney)
+}
+
+class Dialog{
+    + double getDiag()
+}
+
+Main <-- Controller
+
+Controller <-- View
+Controller <-- CalculateVat
+Controller <-- Dialog
+
+
+
+@enduml
